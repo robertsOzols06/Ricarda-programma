@@ -1,3 +1,2 @@
-# Apraksts
-
-test
+#Apraksts 
+Šī būs Ričarda pasūtītā programma.
