@@ -5,6 +5,12 @@ let revealedSafe = 0;
 let totalSafe = 0;
 let gameOver = false;
 function saktSpeli() {
-    const rezgaIzm = parseInt(document.getElementById('gridSize').value);
-    const minuSk = parseInt(document.getElementById('bombCount').value);
+    const rezgaIzmers = parseInt(document.getElementById('gridSize').value);
+    const minuSkaits = parseInt(document.getElementById('bombCount').value);
+    rezgaIzm = rezgaIzmers;
+    minuSk = minuSkaits;
+    revealedSafe = 0;
+    gameOver = false;
+    bombPositions = new Set();
+    totalSafe = rezgaIzm * rezgaIzm - minuSk;
 }
