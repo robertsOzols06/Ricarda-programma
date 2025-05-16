@@ -54,3 +54,14 @@ function klikskPogu(poga) {
         }
     }
 }
+function beigtSpeli(uzvara) {
+    speleBeigusies = true;
+    const procents = Math.round((atklatiDrošie / visiDrošie) * 100);
+    const teksts = uzvara
+        ? `Uzvara! Atklāti ${atklatiDrošie} no ${visiDrošie} drošajiem lauciņiem (${procents}%).`
+        : `Spēle beigusies! Tu atklāji ${atklatiDrošie} no ${visiDrošie} drošajiem lauciņiem (${procents}%).`;
+
+    document.getElementById('rezultāts').textContent = teksts;
+
+    document.querySelectorAll('#speleslauks button').forEach(poga => poga.disabled = true);
+}
